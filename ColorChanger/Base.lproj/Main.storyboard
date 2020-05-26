@@ -27,25 +27,25 @@
                                 <rect key="frame" x="16" y="226" width="382" height="128"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="gKj-cB-4Kx">
-                                        <rect key="frame" x="0.0" y="0.0" width="120.66666666666667" height="128"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="108.66666666666667" height="128"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="VEe-0F-Jy0">
-                                                <rect key="frame" x="0.0" y="0.0" width="51" height="128"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Red:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="Zp0-P2-43L">
-                                                        <rect key="frame" x="0.0" y="0.0" width="51" height="31.333333333333332"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="39.333333333333336" height="31.333333333333332"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Green:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="uw9-zl-KSF">
-                                                        <rect key="frame" x="0.0" y="59.333333333333321" width="51" height="20.333333333333336"/>
+                                                        <rect key="frame" x="0.0" y="59.333333333333321" width="39.333333333333336" height="20.333333333333336"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Blue:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.59999999999999998" translatesAutoresizingMaskIntoConstraints="NO" id="xyB-SO-cC0">
-                                                        <rect key="frame" x="0.0" y="107.66666666666669" width="51" height="20.333333333333343"/>
+                                                        <rect key="frame" x="0.0" y="107.66666666666669" width="39.333333333333336" height="20.333333333333343"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <nil key="highlightedColor"/>
@@ -53,7 +53,7 @@
                                                 </subviews>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" axis="vertical" alignment="top" spacing="28" translatesAutoresizingMaskIntoConstraints="NO" id="BeZ-n5-zbJ">
-                                                <rect key="frame" x="56.000000000000007" y="0.0" width="64.666666666666686" height="128"/>
+                                                <rect key="frame" x="44.333333333333336" y="0.0" width="64.333333333333314" height="128"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="0.99" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.69999999999999996" translatesAutoresizingMaskIntoConstraints="NO" id="uIO-O1-Qvj">
                                                         <rect key="frame" x="0.0" y="0.0" width="34.666666666666664" height="31.333333333333332"/>
@@ -81,24 +81,24 @@
                                         </subviews>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="19" translatesAutoresizingMaskIntoConstraints="NO" id="c90-L7-avJ">
-                                        <rect key="frame" x="120.66666666666666" y="0.0" width="261.33333333333337" height="128"/>
+                                        <rect key="frame" x="108.66666666666666" y="0.0" width="273.33333333333337" height="128"/>
                                         <subviews>
                                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="GMt-36-fcD">
-                                                <rect key="frame" x="-2" y="0.0" width="265.33333333333331" height="31"/>
+                                                <rect key="frame" x="-2" y="0.0" width="277.33333333333331" height="31"/>
                                                 <connections>
-                                                    <action selector="changeRedColor" destination="BYZ-38-t0r" eventType="valueChanged" id="A12-U3-G2B"/>
+                                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="9cY-8Y-8oW"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WaK-3e-HS6">
-                                                <rect key="frame" x="-2" y="49" width="265.33333333333331" height="31"/>
+                                            <slider opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="WaK-3e-HS6">
+                                                <rect key="frame" x="-2" y="49" width="277.33333333333331" height="31"/>
                                                 <connections>
-                                                    <action selector="changeGreenColor" destination="BYZ-38-t0r" eventType="valueChanged" id="XNd-Am-Ld8"/>
+                                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="XQv-6G-beR"/>
                                                 </connections>
                                             </slider>
-                                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jqK-tB-aqd">
-                                                <rect key="frame" x="-2" y="98" width="265.33333333333331" height="31"/>
+                                            <slider opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="jqK-tB-aqd">
+                                                <rect key="frame" x="-2" y="98" width="277.33333333333331" height="31"/>
                                                 <connections>
-                                                    <action selector="changeBlueColor" destination="BYZ-38-t0r" eventType="valueChanged" id="ARr-SN-vHn"/>
+                                                    <action selector="changeViewColor:" destination="BYZ-38-t0r" eventType="valueChanged" id="9zf-Se-3lz"/>
                                                 </connections>
                                             </slider>
                                         </subviews>

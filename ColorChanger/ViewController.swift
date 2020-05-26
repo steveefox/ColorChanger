@@ -24,6 +24,8 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        colorView.layer.cornerRadius = 15
                 
         setAllSlidersCharacteristics()
         
@@ -41,33 +43,25 @@ class ViewController: UIViewController {
     }
     
     
-    @IBAction func changeRedColor() {
-        valueOfUpperSlider.text = String(round(upperSlider.value,
-                                               toDecimalPlaces: 2))
+    
+    @IBAction func changeViewColor(_ sender: UISlider) {
         
-        colorView.backgroundColor = .init(red: CGFloat(upperSlider.value),                                                                                                         green: CGFloat(middleSlider.value),                                                                                                      blue: CGFloat(lowerSlider.value),
-                                          alpha: 1)
+        switch sender.tag {
+        case 0:
+            setViewColor()
+            valueOfUpperSlider.text = String(format: "%.2f", upperSlider.value)
+        case 1:
+            setViewColor()
+            valueOfMiddleSlider.text = String(format: "%.2f", middleSlider.value)
+        case 2:
+            setViewColor()
+            valueOfLowerSlider.text = String(format: "%.2f", lowerSlider.value)
+        default:
+            break
+        }
+        
     }
     
-    @IBAction func changeGreenColor() {
-        valueOfMiddleSlider.text = String(round(middleSlider.value,
-                                                toDecimalPlaces: 2))
-        
-        colorView.backgroundColor = .init(red: CGFloat(upperSlider.value),                                                                                                         green: CGFloat(middleSlider.value),
-                                          blue: CGFloat(lowerSlider.value),
-                                          alpha: 1)
-        
-    }
-    
-    @IBAction func changeBlueColor() {
-        valueOfLowerSlider.text = String(round(lowerSlider.value,
-                                               toDecimalPlaces: 2))
-        
-        colorView.backgroundColor = .init(red: CGFloat(upperSlider.value),                                                                                                         green: CGFloat(middleSlider.value),
-                                          blue: CGFloat(lowerSlider.value),
-                                          alpha: 1)
-    }
-        
     
 }
 
@@ -89,15 +83,19 @@ extension ViewController {
         lowerSlider.minimumTrackTintColor = .blue
         
     }
-}
-
-
-extension ViewController {
-    private func round(_ value: Float, toDecimalPlaces places: Int) -> Float {
-        let divisor = pow(10.0, Float(places))
-        return roundf(value * divisor) / divisor
+    
+    private func setViewColor(){
+        colorView.backgroundColor = .init(red: CGFloat(upperSlider.value),
+                                          green: CGFloat(middleSlider.value),
+                                          blue: CGFloat(lowerSlider.value),
+                                          alpha: 1)
     }
+    
 }
+
+
+
+
 
 
 
